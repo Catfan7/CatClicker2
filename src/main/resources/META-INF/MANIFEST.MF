@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: catfan7.catclicker2.catclicker2.Launcher
+

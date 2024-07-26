@@ -16,6 +16,7 @@ import java.net.URL;
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 
@@ -174,9 +175,17 @@ public class Controller implements Initializable, Runnable {
             Scanner myReader = new Scanner(selectedFile);
             String data = myReader.nextLine();
             String[] FileInfo = data.split("\\.");
-            points = Long.parseLong(FileInfo[1]);
-            setRateText(Long.parseLong(FileInfo[2]));
-            updatePoints();
+            if (Objects.equals(FileInfo[0], "Catclicker")) {
+                points = Long.parseLong(FileInfo[1]);
+                setRateText(Long.parseLong(FileInfo[2]));
+                updatePoints();
+            } else {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("File Error");
+                alert.setHeaderText("Invalid File");
+                alert.setContentText("The selected file is not a valid Catclicker save.");
+                alert.showAndWait();
+            }
         }
     }
 

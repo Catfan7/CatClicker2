@@ -1,0 +1,40 @@
+.root {
+    -fx-background-color: #12181d;
+    -fx-color: #03a9f4;
+}
+
+.menu-bar {
+    -fx-background-color: #050505;
+}
+
+.menu {
+    -fx-color: #03a9f4;
+}
+
+.menu-item {
+    -fx-background-color: #12181d;
+}
+
+.menu-item:hover {
+    -fx-background-color: #03a9f4;
+}
+
+.button {
+    -fx-background-color: #4ab2f5;
+    -fx-text-fill: #12181d;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 5, 0.0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #03a9f4;
+    -fx-text-fill: #b1d8fb;
+    -fx-effect: dropshadow(three-pass-box, rgba(177, 216, 251, 0.8), 5, 0.0, 0, 1);
+}
+
+.label {
+    -fx-text-fill: #b1d8fb;
+}
+
+.check-box {
+    -fx-text-fill: #b1d8fb;
+}

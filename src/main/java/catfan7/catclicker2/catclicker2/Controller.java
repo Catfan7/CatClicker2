@@ -72,8 +72,7 @@ public class Controller implements Initializable, Runnable {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About");
         alert.setHeaderText("About CatClicker2 by Catfan7");
-        alert.setContentText("Catclicker2 is an improvement on the very bare bones clicker game \"Catclicker\", designed for myself as a simple coding exercise for becoming familiar with a GUI library.\n\nGithub: https://github.com/catfan7");
-
+        alert.setContentText("Catclicker2 is an improvement on the very bare bones clicker game \"Catclicker\", designed for myself as a simple coding exercise for becoming familiar with a GUI library. The goal is to reach 1 Quadrillion points.\n\nGithub: https://github.com/catfan7");
         alert.showAndWait();
     }
 

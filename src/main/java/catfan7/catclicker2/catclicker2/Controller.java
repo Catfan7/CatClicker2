@@ -66,7 +66,18 @@ public class Controller implements Initializable, Runnable {
             }
         }
     }
-//Reset functions
+
+    //About
+    public void about() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("About");
+        alert.setHeaderText("About CatClicker2 by Catfan7");
+        alert.setContentText("Catclicker2 is an improvement on the very bare bones clicker game \"Catclicker\", designed for myself as a simple coding exercise for becoming familiar with a GUI library.\n\nGithub: https://github.com/catfan7");
+
+        alert.showAndWait();
+    }
+
+    //Reset functions
     public void win() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("You Win!");
@@ -122,7 +133,7 @@ public class Controller implements Initializable, Runnable {
         }
     }
 
-    //Something I found on stack overflow
+    //File management
     private void saveTextToFile(String content, File file) {
         try {
             PrintWriter writer;

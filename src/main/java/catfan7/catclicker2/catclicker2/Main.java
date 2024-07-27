@@ -12,7 +12,7 @@ import java.util.Objects;
 
 public class Main extends Application {
 
-    String version = "v1.0.2";
+    String version = "v1.0.3";
 
     @Override
     public void start(Stage stage) throws IOException {

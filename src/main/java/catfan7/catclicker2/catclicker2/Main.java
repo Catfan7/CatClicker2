@@ -18,7 +18,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Game.fxml")));
         Scene scene = new Scene(root);
-        String css = this.getClass().getResource("style.css").toExternalForm();
+        String css = Objects.requireNonNull(this.getClass().getResource("style.css")).toExternalForm();
         scene.getStylesheets().add(css);
         stage.setTitle("CatClicker2 - " + version);
         stage.setScene(scene);

@@ -4,10 +4,13 @@ import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -75,6 +78,17 @@ public class Controller implements Initializable, Runnable {
         alert.setHeaderText("About CatClicker2 by Catfan7");
         alert.setContentText("Catclicker2 is an improvement on the very bare bones clicker game \"Catclicker\", designed for myself as a simple coding exercise for becoming familiar with a GUI library. The goal is to reach 1 Quadrillion points.\n\nGithub: https://github.com/catfan7");
         alert.showAndWait();
+    }
+
+    //Open GitHub Repo
+    public void github() {
+        try {
+            String url = "https://github.com/Catfan7/CatClicker2";
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(url));
+        }
+        catch (java.io.IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     //Reset functions
